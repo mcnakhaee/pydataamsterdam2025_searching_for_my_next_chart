@@ -1,0 +1,6 @@
+# filepath: heroku.yml
+build:
+  docker:
+    web: Dockerfile
+run:
+  web: chainlit run src/chainlit_app.py --host 0.0.0.0 --port $PORT --headless
